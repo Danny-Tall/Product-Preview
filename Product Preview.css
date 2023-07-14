@@ -1,0 +1,165 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(30, 38%, 92%);
+    height: 1000px;
+    width: 100%;
+}
+
+.image{
+    width: 350px;
+    height: 525px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image img{
+    width: 350px;
+    border-radius: 20px 0 0 20px;
+}
+
+.box2{
+    width: 300px;
+    height: 525px;
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    border-radius: 0 20px 20px 0;
+}
+
+.content{
+    padding: 30px 0 0 30px;
+}
+
+h5{
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 20px;
+    font-weight: 100;
+    letter-spacing: 5px;
+    color: hsl(228, 12%, 48%);
+}
+
+.content h2{
+    width: 200px;
+    font-family: 'Fraunces', serif;
+    font-size: 30px;
+}
+
+.content p{
+    padding: 20px 0 20px 0;
+    width: 240px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;    
+    line-height: 25px;
+    color: hsl(228, 12%, 48%);
+}
+
+h1{
+    padding: 20px 0 20px 0;
+    font-family: 'Fraunces', serif;
+    color: hsl(158, 36%, 37%);
+}
+
+.old-price{
+    text-decoration: line-through;
+    font-weight: 100;
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    bottom: 5px;
+}
+
+a, a:visited{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 230px;
+    top: 20px;
+    left: 30px;
+    color: white;
+    border-radius: 10px;
+    background-color:hsl(158, 36%, 37%);
+    font-family: 'Montserrat', sans-serif;
+    padding: 15px 0px 15px 0px;
+}
+
+a:hover{
+    border-radius: 10px;
+    width: 230px;
+    top: 20px;
+    left: 30px;
+    background-color:hsl(159, 44%, 13%);
+}
+
+a img{
+    position: relative;
+    bottom: 1px;
+    right: 10px;
+}
+
+
+
+@media (max-width: 640px){
+    body{
+        flex-direction: column;
+    }
+
+    .image img{
+        border-radius: 20px 20px 0 0 ;
+    }
+
+    .box2{
+        width: 350px;
+        height: 430px;
+        border-radius: 0 0 20px 20px;
+    }
+
+    .content h2{
+        width: 300px;
+    }
+
+    .content p{
+        width: 295px;
+    }
+
+    h1{
+        padding: 0;
+    }
+
+    a, a:visited{
+        padding: 15px 10px 15px 55px;
+        left: 30px;
+        top: 20px;
+
+    }
+
+    a p{
+        position: relative;
+        right: 20px;
+    }
+
+    a:hover{
+        padding: 15px 10px 15px 55px;
+        left: 30px;
+        top: 20px;
+    }
+
+    a img{
+        position: relative;
+        bottom: 1px;
+        right: 25px;
+    }
+    
+
+}
